@@ -1,0 +1,66 @@
+ravenII:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50  
+
+  # Position Controllers ---------------------------------------
+  # Left Arm ---------------------------------------------------
+  shoulder_L2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: shoulder_L2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  elbow_L2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: elbow_L2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  insertion_L2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: insertion_L2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  tool_roll_L2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: tool_roll_L2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  wrist_joint_L2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: wrist_joint_L2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  grasper_joint_1_L2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: grasper_joint_1_L2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  grasper_joint_2_L2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: grasper_joint_2_L2
+    pid: {p: 100.0, i: 0.01, d: 10.0}   
+     
+  # Right Arm ---------------------------------------------------
+  shoulder_R2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: shoulder_R2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  elbow_R2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: elbow_R2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  insertion_R2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: insertion_R2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  tool_roll_R2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: tool_roll_R2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  wrist_joint_R2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: wrist_joint_R2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  grasper_joint_1_R2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: grasper_joint_1_R2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  grasper_joint_2_R2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: grasper_joint_2_R2
+    pid: {p: 100.0, i: 0.01, d: 10.0} 
